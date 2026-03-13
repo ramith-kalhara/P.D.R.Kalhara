@@ -350,28 +350,54 @@
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title">Professional Experience</h3>
 
+            <div class="resume-item">
+              <h4>Associate Backend Engineer</h4>
+              <h5>2026 February - Present</h5>
+              <p><em>Neo Solution Private Limited, No 16, Station Road, Colombo 04, Sri Lanka</em></p>
+              <p class="palign">Currently working as an Associate Backend Engineer. Responsible for developing robust server-side logic, managing database architectures with PHPMyAdmin, and ensuring efficient server handling and performance.
+                <br>
+                <a href="https://www.neosolution.lk/" target="_blank" style="color: var(--accent-color); text-decoration: underline;">www.neosolution.lk</a>
+              </p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Intern Backend Developer</h4>
+              <h5>2025 August - 2026 February</h5>
+              <p><em>Neo Solution Private Limited, No 16, Station Road, Colombo 04, Sri Lanka</em></p>
+              <p class="palign">Completed a comprehensive internship as a Backend Developer. Gained hands-on experience in HTML, CSS, JavaScript, and PHP. Focused on server handling and database management to support dynamic web applications.
+                <br>
+                <a href="https://www.neosolution.lk/" target="_blank" style="color: var(--accent-color); text-decoration: underline;">www.neosolution.lk</a>
+              </p>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
 
             <div class="resume-item">
               <h4>Bachelor of Information Technology Specialising in Information Technology </h4>
-              <h5>2022 - Present</h5>
+              <h5>2022 - 2026 December</h5>
               <p><em>SLIIT Malabe Campus, New Kandy Rd, Malabe 10115</em></p>
               <p class="palign">I am pursuing a BSc (Hons) in Information Technology at SLIIT University. This program
                 develops strong programming skills and technical expertise in software design, engineering, operating
                 systems, systems administration, technical support, and networking.
-
               </p>
             </div><!-- Edn Resume Item -->
-            <div class="resume-item">
-              <h4>G.C.E. ADVANCE LEVEL EXAMINATION</h4>
-              <h5>2018 - 2021</h5>
-              <p><em>Royal College Horana</em></p>
-              <p class="palign">I achieved 1B and 2C grades in the Mathematics Stream during my G.C.E. Advanced Level
-                Examination. My grades
-                were B in ICT, C in Combined Mathematics, and C in Physics.</p>
 
-            </div><!-- Edn Resume Item -->
+            <div class="collapse" id="more-resume-info">
+              <div class="resume-item">
+                <h4>G.C.E. ADVANCE LEVEL EXAMINATION</h4>
+                <h5>2018 - 2021</h5>
+                <p><em>Royal College Horana</em></p>
+                <p class="palign">I achieved 1B and 2C grades in the Mathematics Stream during my G.C.E. Advanced Level
+                  Examination. My grades
+                  were B in ICT, C in Combined Mathematics, and C in Physics.</p>
+              </div><!-- Edn Resume Item -->
+            </div>
+
+            <button class="btn btn-outline-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#more-resume-info" aria-expanded="false" aria-controls="more-resume-info" id="resume-toggle-btn">
+              Show More
+            </button>
 
           </div>
 
@@ -724,6 +750,19 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    const resumeToggleBtn = document.getElementById('resume-toggle-btn');
+    const moreResumeInfo = document.getElementById('more-resume-info');
+
+    moreResumeInfo.addEventListener('shown.bs.collapse', function () {
+      resumeToggleBtn.innerHTML = 'Show Less';
+    });
+
+    moreResumeInfo.addEventListener('hidden.bs.collapse', function () {
+      resumeToggleBtn.innerHTML = 'Show More';
+    });
+  </script>
 
 </body>
 
